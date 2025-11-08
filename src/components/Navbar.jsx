@@ -20,15 +20,17 @@ export default function Navbar({ darkMode, toggleDark }) {
         {/* Navbar Links */}
         <nav className="flex gap-6 text-sm font-medium items-center">
      
-          <span className="text-lg">
-            {status ? "🟢 online" : "⭕ offline"}
-          </span>
-
+          
           <Link to="/about">About</Link>
           <Link to="/skills">Skills</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/resume">Resume</Link>
           <Link to="/contact">Contact</Link>
+
+          <span className="text-lg">
+            {status ? "🟢 online" : "⭕ offline"}
+          </span>
+
         </nav>
 
         {/* Dark mode toggle */}
