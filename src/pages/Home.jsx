@@ -13,87 +13,87 @@ export default function Home() {
       className="flex flex-col items-center text-center py-10"
     >
       {/* HERO SECTION */}
-    <motion.section
-      className="flex flex-col md:flex-row items-center justify-center min-h-screen w-full px-6 py-12 text-center md:text-left overflow-hidden"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
-    >
-      {/* ===== Left Side: Profile Image ===== */}
-     <div className="relative flex justify-center items-center w-full md:w-1/2">
-  {/* 🔵 Glowing Animated Circle Background */}
-  <motion.div
-    className="absolute w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 blur-3xl opacity-30 dark:opacity-40"
-    animate={{ scale: [1, 1.1, 1] }}
-    transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-  />
-
- <motion.img
-  src={image}
-  alt="Reshab Kumar Pandey"
-  className="w-60 h-60 md:w-64 md:h-64 rounded-full border-4 border-blue-600 shadow-lg z-10 object-cover object-center bg-gray-200 dark:bg-gray-900"
-  initial={{ scale: 0.9 }}
-  animate={{ scale: 1 }}
-  transition={{ duration: 0.8 }}
-/>
-
-
-  {/* ⚙️ Floating Icons */}
-  <motion.div
-    className="absolute top-10 left-10 text-blue-600 dark:text-blue-400"
-    animate={{ y: [0, -10, 0] }}
-    transition={{ repeat: Infinity, duration: 3 }}
-  >
-    <Laptop size={36} />
-  </motion.div>
-
-  <motion.div
-    className="absolute bottom-12 right-16 text-green-500 dark:text-green-400"
-    animate={{ y: [0, 10, 0] }}
-    transition={{ repeat: Infinity, duration: 4 }}
-  >
-    <Code size={34} />
-  </motion.div>
-
-  <motion.div
-    className="absolute top-1/2 -right-4 text-purple-500 dark:text-purple-400"
-    animate={{ y: [0, -8, 0] }}
-    transition={{ repeat: Infinity, duration: 3.5 }}
-  >
-    <Smartphone size={32} />
-  </motion.div>
-</div>
-
-
-      {/* ===== Right Side: Intro Text ===== */}
-      <motion.div
-        className="mt-10 md:mt-0 md:ml-12 w-full md:w-1/2"
-        initial={{ x: 30, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
+      <motion.section
+        className="flex flex-col md:flex-row items-center justify-center min-h-screen w-full px-6 py-12 text-center md:text-left overflow-hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold">
-          Hi, I’m <span className="text-blue-600 dark:text-blue-400">Reshab Kumar Pandey</span>
-        </h1>
-        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-          Software Developer specializing in React, React Native, and Android (Kotlin).
-        </p>
-        <div className="mt-8 flex gap-4 justify-center md:justify-start">
-          <Link
-            to="/projects"
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+        {/* ===== Left Side: Profile Image ===== */}
+        <div className="relative flex justify-center items-center w-full md:w-1/2">
+          {/* 🔵 Glowing Animated Circle Background */}
+          <motion.div
+            className="absolute w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 blur-3xl opacity-30 dark:opacity-40"
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+          />
+
+          <motion.img
+            src={image}
+            alt="Reshab Kumar Pandey"
+            className="w-60 h-60 md:w-64 md:h-64 rounded-full border-4 border-blue-600 shadow-lg z-10 object-cover object-center bg-gray-200 dark:bg-gray-900"
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.8 }}
+          />
+
+
+          {/* ⚙️ Floating Icons */}
+          <motion.div
+            className="absolute top-10 left-10 text-blue-600 dark:text-blue-400"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 3 }}
           >
-            View Projects
-          </Link>
-          <Link
-            to="/contact"
-            className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition"
+            <Laptop size={36} />
+          </motion.div>
+
+          <motion.div
+            className="absolute bottom-12 right-16 text-green-500 dark:text-green-400"
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 4 }}
           >
-            Contact Me
-          </Link>
+            <Code size={34} />
+          </motion.div>
+
+          <motion.div
+            className="absolute top-1/2 -right-4 text-purple-500 dark:text-purple-400"
+            animate={{ y: [0, -8, 0] }}
+            transition={{ repeat: Infinity, duration: 3.5 }}
+          >
+            <Smartphone size={32} />
+          </motion.div>
         </div>
-      </motion.div>
-    </motion.section>
+
+
+        {/* ===== Right Side: Intro Text ===== */}
+        <motion.div
+          className="mt-10 md:mt-0 md:ml-12 w-full md:w-1/2"
+          initial={{ x: 30, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="text-4xl md:text-5xl font-bold">
+            Hi, I’m <span className="text-blue-600 dark:text-blue-400">Reshab Kumar Pandey</span>
+          </h1>
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            Software Developer specializing in React, React Native, and Android (Kotlin).
+          </p>
+          <div className="mt-8 flex gap-4 justify-center md:justify-start">
+            <Link
+              to="/projects"
+              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
+              View Projects
+            </Link>
+            <Link
+              to="/contact"
+              className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition"
+            >
+              Contact Me
+            </Link>
+          </div>
+        </motion.div>
+      </motion.section>
 
 
       {/* ABOUT SECTION */}
@@ -142,16 +142,20 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
+              title: "KTC app",
+              desc: "A React Native Mobile App For Corporate Chauffeur Ride Booking and Tracking",
+            },
+            {
               title: "Portfolio Website",
-              desc: "Personal portfolio built with React, Tailwind, and Framer Motion.",
+              desc: "Personal portfolio built with React, Tailwind CSS, and Framer Motion.",
             },
             {
-              title: "Food Ordering App",
-              desc: "React Native app for ordering cakes, pizzas, and burgers (Veg only).",
+              title: "VahanShakti Website",
+              desc: "A React Website a smart and efficient way to manage and monitor your vehicles through GPS device AIS-140",
             },
             {
-              title: "Weather Dashboard",
-              desc: "Responsive weather tracker using OpenWeather API.",
+              title: "Gtropy Manual",
+              desc: "Developed With Plain Javascript Html/Css using firebase .",
             },
           ].map((p, i) => (
             <motion.div
