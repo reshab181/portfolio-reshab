@@ -27,15 +27,15 @@ export default function Home() {
             animate={{ scale: [1, 1.1, 1] }}
             transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
           />
-
           <motion.img
             src={image}
             alt="Reshab Kumar Pandey"
-            className="w-60 h-60 md:w-64 md:h-64 rounded-full border-4 border-blue-600 shadow-lg z-10 object-cover object-center bg-gray-200 dark:bg-gray-900"
+            className="w-56 md:w-56 h-64 md:h-67 rounded-2xl border-4 border-blue-600 shadow-lg z-10 object-cover object-center bg-gray-200 dark:bg-gray-900"
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.8 }}
           />
+
 
 
           {/* ⚙️ Floating Icons */}
