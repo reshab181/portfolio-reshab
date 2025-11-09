@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import useAutoHomeOnScroll from "../utils/useAutoHomeOnScroll";
 
 export default function Resume() {
+  useAutoHomeOnScroll(3)
   const [isAdmin, setIsAdmin] = useState(false);
 
   const handleUpload = (e) => {

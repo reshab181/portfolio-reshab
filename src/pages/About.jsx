@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import useAutoHomeOnScroll from "../utils/useAutoHomeOnScroll";
 
 export default function About() {
+  useAutoHomeOnScroll(3);
   return (
     <motion.section
       className="max-w-4xl mx-auto px-6 py-16"

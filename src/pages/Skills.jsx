@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import useAutoHomeOnScroll from "../utils/useAutoHomeOnScroll";
 
 const skills = [
   "HTML5", "CSS3", "JavaScript (ES6+)", "React.js", "React Native",
@@ -7,6 +8,7 @@ const skills = [
 ];
 
 export default function Skills() {
+  useAutoHomeOnScroll(3)
   return (
     <motion.section
       className="max-w-5xl mx-auto px-6 py-16 text-center"

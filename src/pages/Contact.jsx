@@ -1,24 +1,28 @@
 import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import emailjs from 'emailjs-com';
 import { motion } from "framer-motion";
+import useAutoHomeOnScroll from "../utils/useAutoHomeOnScroll";
 
 export default function Contact() {
+  useAutoHomeOnScroll(3);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_xxxxxx", // Replace with your EmailJS service ID
-        "template_xxxxxx", // Replace with your template ID
-        form.current,
-        "YOUR_PUBLIC_KEY"  // Replace with your public key
-      )
-      .then(
-        () => alert("Message sent successfully!"),
-        (err) => alert("Error sending message: " + err.text)
-      );
-    e.target.reset();
+
+    emailjs.sendForm(
+      "service_eww0enw",
+      "template_uza35ci",
+      form.current,
+      "QZZjw7suxtLl3BZyK"
+    )
+    .then(
+      () => {
+        alert("Message sent successfully!");
+        e.target.reset();
+      },
+      (err) => alert("Error sending message: " + err.text)
+    );
   };
 
   return (
@@ -58,7 +62,9 @@ export default function Contact() {
           Send Message
         </button>
       </form>
-      <p className="mt-6 text-gray-500">Or email me at: <strong>reshabkumapandey@gmail.com</strong></p>
+      <p className="mt-6 text-gray-500">
+        Or email me at: <strong>reshabkumapandey@gmail.com</strong>
+      </p>
     </motion.section>
   );
 }

@@ -142,24 +142,29 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
-              title: "KTC app",
-              desc: "A React Native Mobile App For Corporate Chauffeur Ride Booking and Tracking",
-            },
-            {
-              title: "Portfolio Website",
-              desc: "Personal portfolio built with React, Tailwind CSS, and Framer Motion.",
-            },
-            {
-              title: "VahanShakti Website",
-              desc: "A React Website a smart and efficient way to manage and monitor your vehicles through GPS device AIS-140",
-            },
-            {
-              title: "Gtropy Manual",
-              desc: "Developed With Plain Javascript Html/Css using firebase .",
-            },
+    title: "KTC app",
+    desc: "A React Native Mobile App For Corporate Chauffeur Ride Booking and Tracking",
+    link: "https://play.google.com/store/apps/details?id=com.ktccustomerApp", 
+  },
+  {
+    title: "Portfolio Website",
+    desc: "Personal portfolio built with React, Tailwind CSS, and Framer Motion.",
+    link: "https://portfolio-reshab.vercel.app/",
+  },
+  {
+    title: "VahanShakti Website",
+    desc: "A React Website a smart and efficient way to manage and monitor your vehicles through GPS device AIS-140",
+    link: "https://vahanshakti.in/", 
+  },
+  {
+    title: "Gtropy Manual",
+    desc: "Developed With Plain Javascript Html/Css using firebase.",
+    link: "https://gtropymanual.web.app/",
+  },
           ].map((p, i) => (
             <motion.div
               key={i}
+              href={p.link}
               whileHover={{ scale: 1.05 }}
               className="bg-white dark:bg-gray-800 border dark:border-gray-700 shadow-md p-6 rounded-lg"
             >
